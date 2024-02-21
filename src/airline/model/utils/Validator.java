@@ -1,7 +1,5 @@
 package airline.model.utils;
 
-import project.controller.exception.ValidationException;
-
 import java.util.regex.Pattern;
 
 public class Validator {
@@ -14,11 +12,11 @@ public class Validator {
         return validator;
     }
 
-    public String nameValidator(String name, String message) throws ValidationException {
-        if (Pattern.matches("", name)){
-            return name;
-        }else{
-            throw new ValidationException(message);
-        }
-    }
+//    public String nameValidator(String name, String message) throws ValidationException {
+//        if (Pattern.matches("", name)){
+//            return name;
+//        }else{
+//            throw new ValidationException(message);
+//        }
+//    }
 }
